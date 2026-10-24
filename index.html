@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alexander &amp; Agnes</title>
+<meta name="description" content="Alexander &amp; Agnes · Kraków · 1 August 2027 · RSVP">
+<meta property="og:title" content="Alexander &amp; Agnes · Kraków · 1 August 2027">
+<meta property="og:description" content="You are invited. Please RSVP.">
+<meta property="og:image" content="https://alexagnes.com/poster.jpg">
+<meta name="theme-color" content="#d6e6eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;900&family=Jost:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-l-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="icon-l-64.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-l-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon-l.png">
+<style>
+:root{
+  --bg:#d6e6eb; --card:rgba(255,255,255,.42); --field:rgba(255,255,255,.72); --ink:#5d4034; --soft:#8a6f60; --rose:#8b2635; --kv:"Yellowtail","Jost",cursive; --yt-shadow:1px 1px 0 #ceab07,2px 2px 0 #ceab07,0 3px 3px rgba(90,60,0,.25); --fig-shadow:1px 1px 0 #ceab07,2px 2px 0 #ceab07,3px 3px 0 #ceab07,4px 4px 0 #ceab07,5px 6px 4px rgba(60,40,0,.25); --gold:#b9945a; --line:#b4ccd4;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#d6e6eb; --card:rgba(255,255,255,.42); --ink:#5d4034; } }
+:root[data-theme="dark"]{ --bg:#d6e6eb; --card:rgba(255,255,255,.42); --ink:#5d4034; }
+@media (min-width:600px){:root{--fig-shadow:1px 1px 0 #ceab07,2px 2px 0 #ceab07,3px 3px 0 #ceab07,4px 4px 0 #ceab07,5px 5px 0 #ceab07,6px 6px 0 #ceab07,7px 7px 0 #ceab07,8px 9px 6px rgba(60,40,0,.25)}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:#ffde03;font-family:var(--kv);font-size:22px;line-height:1.4;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+.bgfig{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:url(lajkonik.png) no-repeat center 55%/min(78vw,620px) auto;opacity:.08}
+main{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:56px 16px 40px;text-align:center}
+.kicker{letter-spacing:.32em;text-transform:uppercase;font-size:14px;color:var(--soft);margin:0}
+h1{font-family:"Figtree","Jost",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;color:#ffde03;paint-order:normal;text-shadow:var(--fig-shadow);font-size:clamp(24px,7.2vw,54px);line-height:1.15;margin:0 0 8px;white-space:nowrap}
+.acc{position:relative;display:inline-block}
+.acc::after{content:"";position:absolute;left:58%;top:.02em;width:.085em;height:.26em;background:currentColor;border-radius:.04em;transform:translateX(-50%) rotate(38deg)}
+.one{position:relative;display:inline-block}
+.one::before{content:"";position:absolute;left:0;top:.03em;width:.085em;height:.36em;background:currentColor;border-radius:.04em;transform:rotate(-55deg);transform-origin:100% 0}
+.date,h2{-webkit-text-stroke:.03em #ffde03;paint-order:stroke fill;text-shadow:var(--yt-shadow)}
+.date{font-size:30px;margin:0}
+.rule{width:120px;height:1px;background:var(--gold);opacity:.7;margin:28px auto;position:relative}
+.rule:after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--bg);border:1px solid var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+.video{color:#fff;text-shadow:none;-webkit-text-stroke:0;width:min(100%,380px);margin:8px auto 0;border-radius:10px;overflow:hidden;box-shadow:0 14px 34px rgba(93,64,52,.18);border:1px solid var(--line);background:var(--bg)}
+.video video{display:block;width:100%;height:auto;aspect-ratio:9/16}
+h2{font-weight:400;font-size:52px;margin:0 0 16px}
+.lead{color:var(--soft);font-style:italic;margin:0 0 26px}
+form{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px 22px 26px;text-align:left;position:relative}
+form,.thanks{color:#8d1c20;font-family:"Figtree",sans-serif;-webkit-text-stroke:0;text-shadow:none;text-transform:none;line-height:1.45}
+form:before{content:"";position:absolute;inset:7px;border:1px solid var(--line);border-radius:6px;pointer-events:none;opacity:.7}
+.f{margin:0 0 20px;position:relative}
+label,.lbl{display:block;font-weight:500;font-size:17px;margin-bottom:7px}
+.opt{font-weight:400;font-size:.88em;opacity:.8}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;font:inherit;font-family:"Figtree",sans-serif;font-size:17px;-webkit-text-stroke:0;text-shadow:none;color:#8d1c20;background:var(--field);border:1px solid var(--line);border-radius:6px;padding:10px 12px;outline:none;transition:border-color .2s,box-shadow .2s}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,148,90,.18)}
+.choices{display:flex;flex-wrap:wrap;gap:10px}
+.choices label{margin:0;font-weight:500;font-size:17px;flex:1 1 auto;cursor:pointer}
+.choices input{position:absolute;opacity:0;pointer-events:none}
+.choices span{display:block;text-align:center;padding:10px 14px;border:1px solid var(--line);border-radius:6px;background:var(--field);transition:all .2s}
+.choices input:checked+span{background:#ceab07;border-color:#ceab07}
+.choices input:focus-visible+span{box-shadow:0 0 0 3px rgba(176,87,92,.25)}
+.hide{display:none}
+button{display:block;width:100%;margin-top:8px;font:inherit;font-family:"Yellowtail",cursive;font-size:30px;font-weight:400;line-height:1.2;padding-top:10px;padding-bottom:10px;color:#ceab07;background:#ffde03;border:none;border-radius:6px;padding:14px;cursor:pointer;transition:background .2s,color .2s}
+button:hover{background:#ceab07;color:#ffde03}
+button:disabled{opacity:.6;cursor:default}
+.err{font-size:15px;margin:10px 0 0;text-align:center;min-height:1em}
+.thanks{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:40px 22px}
+.thanks p{margin:0}
+.thanks .big{font-size:30px;font-weight:600;line-height:1.2;margin-bottom:8px}
+.soon{font-family:"Figtree","Jost",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;color:#ffde03;paint-order:normal;text-shadow:var(--fig-shadow);font-size:clamp(24px,7vw,34px);margin:48px 0 24px}
+footer{color:var(--soft);font-size:14px;letter-spacing:.2em;text-transform:uppercase;padding-bottom:24px}
+</style>
+</head>
+<body>
+<div class="bgfig" aria-hidden="true"></div>
+<main>
+  <h1>Alexander &amp; Agnes</h1>
+  <p class="date">Kraków • August 1st, 2027</p>
+
+  <div class="rule"></div>
+
+  <div class="video">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="invitation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="rule"></div>
+
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <form id="f" novalidate>
+      <div class="f">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="entry.22408186" autocomplete="name" required>
+      </div>
+      <div class="f">
+        <span class="lbl">Will you join us?</span>
+        <div class="choices">
+          <label><input type="radio" name="entry.51337464" value="Joyfully accept" required><span>Of Course!</span></label>
+          <label><input type="radio" name="entry.51337464" value="Regretfully decline"><span>I can't</span></label>
+        </div>
+      </div>
+      <div id="yes" class="hide">
+        <div class="f">
+          <span class="lbl">How many of you will come, including yourself?</span>
+          <div class="choices">
+            <label><input type="radio" name="entry.1514005982" value="1"><span>1</span></label>
+            <label><input type="radio" name="entry.1514005982" value="2"><span>2</span></label>
+          </div>
+        </div>
+        <div class="f hide" id="partnerBox">
+          <label for="partner">Your partner's name</label>
+          <input type="text" id="partner" name="entry.1704716468">
+        </div>
+        <div class="f">
+          <label for="diet">Dietary requirements or allergies</label>
+          <textarea id="diet" name="entry.23889071"></textarea>
+        </div>
+        <div class="f">
+        <label for="email">Your email <span class="opt">(so we can send updates)</span></label>
+        <input type="email" id="email" name="entry.441542133" autocomplete="email">
+        </div>
+        <div class="f">
+        <label for="wa">WhatsApp number <span class="opt">(if you want to be added in a group)</span></label>
+        <input type="tel" id="wa" name="entry.2089288874" autocomplete="tel" inputmode="tel">
+        </div>
+      </div>
+      <div class="f">
+        <label for="msg">Anything else we should know?</label>
+        <textarea id="msg" name="entry.1784808137"></textarea>
+      </div>
+      <button type="submit" id="btn">Send RSVP</button>
+      <p class="err" id="err" role="alert"></p>
+    </form>
+
+    <div class="thanks hide" id="thanks">
+      <p class="big">Thank you!</p>
+      <p id="thanksMsg">Your reply has been received.</p>
+    </div>
+  </section>
+
+  <p class="soon">More coming soon!</p>
+</main>
+
+<script>
+(function(){
+  var ACTION="https://docs.google.com/forms/d/e/1FAIpQLSdDLEeXqUFfpFKruoeQ2aKyysY2wx8BfwtqSYWXYzBtXyy9Jw/formResponse";
+  var f=document.getElementById('f'), yes=document.getElementById('yes'), err=document.getElementById('err'), btn=document.getElementById('btn');
+  f.addEventListener('change',function(e){
+    if(e.target.name==='entry.51337464') yes.classList.toggle('hide', e.target.value!=='Joyfully accept');
+    if(e.target.name==='entry.1514005982') document.getElementById('partnerBox').classList.toggle('hide', e.target.value!=='2');
+  });
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); err.textContent='';
+    var name=document.getElementById('name').value.trim();
+    var att=f.querySelector('input[name="entry.51337464"]:checked');
+    if(!name){err.textContent='Please tell us your name.';document.getElementById('name').focus();return;}
+    if(!att){err.textContent='Please let us know if you can join.';return;}
+    var em=f['entry.441542133'];
+    if(att.value==='Joyfully accept' && em.value && !em.checkValidity()){err.textContent='That email address doesn\'t look right.';em.focus();return;}
+    var data=new URLSearchParams();
+    new FormData(f).forEach(function(v,k){
+      if(att.value!=='Joyfully accept' && /^(entry\.1514005982|entry\.1704716468|entry\.23889071|entry\.441542133|entry\.2089288874)$/.test(k)) return;
+      if(k==='entry.1704716468' && document.getElementById('partnerBox').classList.contains('hide')) return;
+      if(v!=='') data.append(k,v);
+    });
+    btn.disabled=true; btn.textContent='Sending…';
+    fetch(ACTION,{method:'POST',mode:'no-cors',body:data}).then(function(){
+      f.classList.add('hide');
+      document.getElementById('thanksMsg').innerHTML = att.value==='Joyfully accept'
+        ? 'We can\'t wait to celebrate with you in Kraków.'
+        : 'We\'ll miss you, and we\'re grateful you let us know.';
+      document.getElementById('thanks').classList.remove('hide');
+      document.getElementById('rsvp').scrollIntoView({behavior:'smooth',block:'start'});
+    }).catch(function(){
+      btn.disabled=false; btn.textContent='Send RSVP';
+      err.textContent='Something went wrong. Please check your connection and try again.';
+    });
+  });
+})();
+</script>
+</body>
+</html>
