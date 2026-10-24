@@ -46,7 +46,7 @@ h1{font-family:"Figtree","Jost",sans-serif;font-weight:900;text-transform:upperc
 h2{font-weight:400;font-size:52px;margin:0 0 16px}
 .lead{color:var(--soft);font-style:italic;margin:0 0 26px}
 form{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px 22px 26px;text-align:left;position:relative}
-form,.thanks{color:#8d1c20;font-family:"Figtree",sans-serif;-webkit-text-stroke:0;text-shadow:none;text-transform:none;line-height:1.45}
+form{color:#8d1c20;font-family:"Figtree",sans-serif;-webkit-text-stroke:0;text-shadow:none;text-transform:none;line-height:1.45}
 form:before{content:"";position:absolute;inset:7px;border:1px solid var(--line);border-radius:6px;pointer-events:none;opacity:.7}
 .f{margin:0 0 20px;position:relative}
 label,.lbl{display:block;font-weight:500;font-size:17px;margin-bottom:7px}
@@ -65,9 +65,7 @@ button{display:block;margin:14px auto 0;padding:4px 10px;background:none;border:
 button:hover{color:#ceab07;-webkit-text-stroke-color:#ceab07;text-shadow:1px 1px 0 #ffde03,2px 2px 0 #ffde03,0 3px 3px rgba(90,60,0,.25)}
 button:disabled{opacity:.6;cursor:default}
 .err{font-size:15px;margin:10px 0 0;text-align:center;min-height:1em}
-.thanks{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:40px 22px}
-.thanks p{margin:0}
-.thanks .big{font-size:30px;font-weight:600;line-height:1.2;margin-bottom:8px}
+.thanks{margin:4px 0 0;font-family:"Yellowtail",cursive;font-weight:400;font-size:40px;line-height:1.25;color:#ffde03;-webkit-text-stroke:.03em #ffde03;paint-order:stroke fill;text-shadow:var(--yt-shadow)}
 .soon{font-family:"Figtree","Jost",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;color:#ffde03;paint-order:normal;text-shadow:var(--fig-shadow);font-size:clamp(24px,7vw,34px);margin:48px 0 24px}
 footer{color:var(--soft);font-size:14px;letter-spacing:.2em;text-transform:uppercase;padding-bottom:24px}
 </style>
@@ -135,10 +133,7 @@ footer{color:var(--soft);font-size:14px;letter-spacing:.2em;text-transform:upper
       <p class="err" id="err" role="alert"></p>
     </form>
 
-    <div class="thanks hide" id="thanks">
-      <p class="big">Thank you!</p>
-      <p id="thanksMsg">Your reply has been received.</p>
-    </div>
+    <p class="thanks hide" id="thanks">We are looking forward to celebrating with you!</p>
   </section>
 
   <p class="soon">More coming soon!</p>
@@ -169,9 +164,7 @@ footer{color:var(--soft);font-size:14px;letter-spacing:.2em;text-transform:upper
     btn.disabled=true; btn.textContent='Sending…';
     fetch(ACTION,{method:'POST',mode:'no-cors',body:data}).then(function(){
       f.classList.add('hide');
-      document.getElementById('thanksMsg').innerHTML = att.value==='Joyfully accept'
-        ? 'We can\'t wait to celebrate with you in Kraków.'
-        : 'We\'ll miss you, and we\'re grateful you let us know.';
+      if(att.value!=='Joyfully accept') document.getElementById('thanks').textContent='Thank you for letting us know!';
       document.getElementById('thanks').classList.remove('hide');
       document.getElementById('rsvp').scrollIntoView({behavior:'smooth',block:'start'});
     }).catch(function(){
